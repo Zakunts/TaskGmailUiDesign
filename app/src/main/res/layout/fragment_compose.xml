@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.ComposeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_20"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="@dimen/space_20" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_baseline_arrow_back_24"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_16"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_5"
+        android:text="@string/compose"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_13"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toEndOf="@+id/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="@+id/ic_baseline_arrow_back_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_baseline_attach_file_24"
+        android:layout_width="18dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="@dimen/space_50"
+        app:layout_constraintBottom_toBottomOf="@+id/Title"
+        app:layout_constraintStart_toEndOf="@id/Title"
+        app:layout_constraintTop_toTopOf="@+id/Title"
+        app:srcCompat="@drawable/ic_baseline_attach_file_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_baseline_send_24"
+        android:layout_width="18dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_baseline_attach_file_24"
+        app:layout_constraintStart_toEndOf="@+id/ic_baseline_attach_file_24"
+        app:layout_constraintTop_toTopOf="@+id/ic_baseline_attach_file_24"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_send_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_baseline_more_vert_24"
+        android:layout_width="18dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_baseline_send_24"
+        app:layout_constraintStart_toEndOf="@+id/ic_baseline_send_24"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_from"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/from_matghjkjlklkl_gamil_com"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/ic_baseline_arrow_back_24" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/to"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:text="@string/to"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/subject"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:text="@string/subject"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/compose_email"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:text="@string/compose_email"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
+</androidx.constraintlayout.widget.ConstraintLayout>

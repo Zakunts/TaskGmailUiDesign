@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@id/homeFragment"
+        android:icon="@drawable/ic_baseline_email_24"
+  />
+    <item
+        android:id="@+id/meetFragment"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        tools:ignore="MenuTitle" />
+
+</menu>

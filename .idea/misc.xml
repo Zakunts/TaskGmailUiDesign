@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable-v24/shape_menu_item.xml" value="0.171" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable-v24/shape_next_btn.xml" value="0.171" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable-v24/shape_next_btn_hover.xml" value="0.171" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.212" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_baseline_videocam_24.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/ic_launcher_background.xml" value="0.169" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/learn_more_btn.xml" value="0.17" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/selector_hover_btn.xml" value="0.17" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/selector_hover_next_btn.xml" value="0.171" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/shape_draw_menu.xml" value="0.171" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/shape_mail.xml" value="0.212" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/shape_mail_acount_letter.xml" value="0.212" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/drawable/shape_search.xml" value="0.134" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/activity_main.xml" value="0.1125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_basic_information.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_compose.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_home.xml" value="0.2983479105928086" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_login_welcome.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_meet.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_register.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/fragment_splash.xml" value="0.1265625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/item_rec.xml" value="0.6" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/layout/nav_header.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/menu/menu_bar.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/menu/nav_graph.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskGmailUiDesign/app/src/main/res/menu/nav_menu.xml" value="0.15989583333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

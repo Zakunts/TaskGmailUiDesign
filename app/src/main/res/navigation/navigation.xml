@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginWelcomeFragment"
+            app:destination="@id/loginWelcomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_meetFragment"
+            app:destination="@id/meetFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginWelcomeFragment"
+            app:destination="@id/loginWelcomeFragment"
+            app:popUpTo="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_composeFragment"
+            app:destination="@id/composeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginWelcomeFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.LoginWelcomeFragment"
+        android:label="fragment_login_welcome"
+        tools:layout="@layout/fragment_login_welcome" >
+        <action
+            android:id="@+id/action_loginWelcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/meetFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.MeetFragment"
+        android:label="fragment_meet"
+        tools:layout="@layout/fragment_meet" >
+        <action
+            android:id="@+id/action_meetFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_meetFragment_self"
+            app:destination="@id/meetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_basicInformationFragment"
+            app:destination="@id/basicInformationFragment"
+            app:popUpTo="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicInformationFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.BasicInformationFragment"
+        android:label="fragment_basic_information"
+        tools:layout="@layout/fragment_basic_information" />
+    <fragment
+        android:id="@+id/composeFragment"
+        android:name="com.example.taskgmailuidesign.presentation.ui.ComposeFragment"
+        android:label="fragment_compose"
+        tools:layout="@layout/fragment_compose" />
+</navigation>

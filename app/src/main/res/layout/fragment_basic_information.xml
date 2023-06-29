@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.BasicInformationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_20"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="@dimen/space_20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reg_title"
+        style="@style/Login_style"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/google"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@+id/guidelineOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/basic_information"
+        style="@style/login_text"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/basic_information"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@+id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/reg_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enter_your_birthday_and_gender"
+        style="@style/login_text_small"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="@string/enter_your_birthday_and_gender"
+        app:layout_constraintEnd_toEndOf="@id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@+id/basic_information" />
+
+
+    <LinearLayout
+        android:id="@+id/datePickerContainer"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_25"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="@id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@id/enter_your_birthday_and_gender">
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_70"
+            android:layout_weight="1"
+            android:prompt="@string/month_prompt" />
+
+        <Spinner
+            android:id="@+id/spinnerDay"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_70"
+            android:layout_weight="1"
+            android:prompt="@string/day_prompt" />
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_70"
+            android:layout_weight="1"
+            android:prompt="@string/year_prompt" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_70"
+        android:layout_marginTop="@dimen/space_8"
+        app:layout_constraintEnd_toEndOf="@id/guidelineTwo"
+        app:layout_constraintStart_toStartOf="@id/guidelineOne"
+        app:layout_constraintTop_toBottomOf="@id/datePickerContainer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reg_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_90"
+        android:background="@drawable/selector_hover_next_btn"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineTwo"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

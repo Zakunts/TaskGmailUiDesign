@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/primary"
+        android:icon="@drawable/ic_baseline_crop_original_24"
+        android:title="@string/primary" />
+    <item
+        android:id="@+id/social"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="@string/social" />
+    <item
+        android:id="@+id/promotions"
+        android:icon="@drawable/ic_outline_sell_24"
+        android:title="@string/promotions" />
+
+
+    <group
+        android:id="@+id/group_section1"
+        android:title="@string/all_labels">
+        <item
+            android:id="@+id/starred"
+            android:icon="@drawable/ic_baseline_star_border_24"
+            android:title="@string/starred" />
+        <item
+            android:id="@+id/snoozed"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="@string/snoozed" />
+        <item
+            android:id="@+id/important"
+            android:icon="@drawable/ic_outline_label_24"
+            android:title="@string/important" />
+        <item
+            android:id="@+id/sent"
+            android:icon="@drawable/ic_baseline_send_24"
+            android:title="@string/sent" />
+        <item
+            android:id="@+id/scheduled"
+            android:icon="@drawable/ic_baseline_schedule_send_24"
+            android:title="@string/scheduled" />
+
+        <item
+            android:id="@+id/outbox"
+            android:icon="@drawable/ic_baseline_shop_24"
+            android:title="@string/outbox" />
+        <item
+            android:id="@+id/drafts"
+            android:icon="@drawable/ic_baseline_insert_drive_file_24"
+            android:title="@string/drafts" />
+        <item
+            android:id="@+id/all_mail"
+            android:icon="@drawable/ic_baseline_mail_outline_24"
+            android:title="@string/all_mail" />
+        <item
+            android:id="@+id/spam"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/spam" />
+        <item
+            android:id="@+id/bin"
+            android:icon="@drawable/ic_baseline_delete_24"
+            android:title="@string/bin" />
+
+    </group>
+    <group
+        android:id="@+id/group_section2"
+        android:title="@string/all_labels">
+
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="@string/contacts" />
+    </group>
+    <group
+        android:id="@+id/group_section3"
+        >
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/help_and_feedback"
+            android:icon="@drawable/ic_baseline_help_outline_24"
+            android:title="@string/help_and_feedback" />
+    </group>
+
+</menu>
